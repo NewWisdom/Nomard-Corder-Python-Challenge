@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://andybrewer.github.io/mvp/mvp.css" rel="stylesheet"></link>
+</head>
+
+<body>
+  <header>
+    <h1>{{header_info.title}}</h1>
+    <div>
+      {{header_info.points}} | {{header_info.author}} | <a href="{{header_info.url}}" target="_blank">{{header_info.url}}</a>
+    </div>
+  </header>
+</body>
+  {%for comment in comments%}
+  <div>
+    {%if comment.author == None%}
+      [deleted]
+    {%else%}
+      <strong>{{comment.author}}</strong>
+      <p><p>{{comment.comment_text | safe}}</p></p>
+    {%endif%} 
+  </div>
+  <hr />
+  {%endfor%}
+</html>

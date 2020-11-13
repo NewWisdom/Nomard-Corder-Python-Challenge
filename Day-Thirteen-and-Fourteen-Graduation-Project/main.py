@@ -37,7 +37,7 @@ def result():
     # jobs.extend(extract_wwr(word))
     db[word] = jobs
   leng = len(jobs)
-  print(jobs)
+  # print(jobs)
   return render_template("result.html",jobs=jobs,word=word,leng = leng)
 
 @app.route('/export')
