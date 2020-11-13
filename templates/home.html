@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index_style.css') }}">
+  <title>Remote Job Search</title>
+</head>
+<body>
+  <div class="content-section">
+    <h1>Are you Looking for Remote Job?</h1>
+    <h3>Search by terms-!</h3>
+    <hr>
+    <br>
+    <form action="/search" method="get">
+      <input placeholder="My term is..." required name="word"/>
+      <button class="button">👀 Search 👀</button>
+    </form>
+    <br>
+    <br>
+  </div>
+  
+</body>
+</html>

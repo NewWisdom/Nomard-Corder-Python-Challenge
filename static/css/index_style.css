@@ -1,0 +1,83 @@
+header{
+  text-align: center;
+}
+body {
+  background: #F28322;
+  color: #010326;
+  margin-top: 5rem;
+}
+.content-section {
+  background: #fff;
+  padding: 10px 20px;
+  border: 3px solid #D96704;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  color: #010326;
+  margin:0 auto;
+  width:50%
+}
+.content-section-result {
+  background: #fff;
+  padding: 10px 20px;
+  border: 3px solid #D96704;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  color: #010326;
+  width: 70%;
+  margin: 0 auto;
+}
+input{
+    margin-right:15px;
+    height:38px;
+    font-size : 18px;
+
+}
+.button {
+	width: 100px;
+	height: 40px;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+    border-radius:3px;
+}
+.button::before,
+.button::after {
+
+	content: '';
+}
+.button,
+.button::before,
+.button::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+.button {
+	background-color: #0D2840;
+	border: 2px solid #010326;
+	color: #fff;
+}
+.button:hover {
+	background-color: #fff;
+	border-color: #010326;
+	color: #010326;
+}
+.remote_job{
+    font-size: 60px;
+    font :bold;
+    background-color: #0D2840;
+	border: 2px solid #010326;
+    border-radius: 3px;
+	color: #fff;
+    width:30%;
+    margin:0 auto;
+}
+.content-section-result h3{
+    font-size:32px;
+}
+
+a:link { color: rgb(20, 62, 99); text-decoration: underline; }
+a:visited { color: #D96704; text-decoration: underline; }
+a:hover { color: #D96704; text-decoration: underline; }

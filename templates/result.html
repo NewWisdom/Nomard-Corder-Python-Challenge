@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- <link href="https://andybrewer.github.io/mvp/mvp.css" rel="stylesheet"></link> -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index_style.css') }}">
+</head>
+
+<body>
+  <header>
+    <h1 class="remote_job">Remote Jobs</h1>
+    <h2>{{leng}} {{word}} jobs found.</h3>
+    <h2><a href="/export?word={{word}}">Export to CSV</a></h2>
+    <h4><a href="/">🔙 Go Back</a></h4>
+  </header>
+  <main>
+    <div class="content-section-result">
+      {%for job in jobs%} 
+      <div>
+          <h3>{{job.title}}</h3>
+          <h2>{{job.company}}</h2>
+          <h2><a href="{{job.href}}" target="_blank">Apply</a></h2>
+        <hr />
+      </div>
+      {%endfor%}
+    </div>
+  </main>
+</body>
+
+</html>
